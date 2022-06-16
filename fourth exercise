@@ -1,0 +1,26 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda da Cunha
+// Descrição   : Inverter ordem dos nomes
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 10/03/2021
+
+Var
+   nome1, nome2, nome3, nome4: caractere
+
+Inicio
+   Escreval("Digite o nome 1:")
+   leia(nome1)
+   Escreval("Digite o nome 2:")
+   leia(nome2)
+   Escreval("Digite o nome 3:")
+   leia(nome3)
+   Escreval("Digite o nome 4:")
+   leia(nome4)
+   
+   escreval("ordem inversa a da leitura")
+   leia(nome4)
+   leia(nome3)
+   leia(nome2)
+   leia(nome1)
+
+Fimalgoritmo
