@@ -1,0 +1,20 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda da Cunha 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 10/03/2021
+
+Var
+// Seção de Declarações das variáveis 
+   raio, altura, volume: Real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   Escreval("Digite o raio do objeto :")
+   leia(raio)
+   Escreval("Digite a altura do objeto :")
+   leia(altura)
+   volume <- PI * raio ^ 2 * altura
+   Escreval("Volume =", volume)
+
+Fimalgoritmo
