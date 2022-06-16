@@ -1,0 +1,45 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda da Cunha 
+// Descrição   : Verificar e retornar o mês escolhido pelo usuário de acordo com o valor digitado
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 10/03/2021
+
+VAR
+    num: INTEIRO
+    mes: CARACTERE
+    
+INICIO
+    ESCREVA(“Informe um numero: ”)
+    LEIA (num)
+    SE num<1 OU num>12 ENTAO
+        ESCREVAL(“Valor nao eh valido para mes”)
+    SENAO
+        ESCOLHA(num)
+            CASO 1
+                mes <- “JANEIRO”
+            CASO 2
+                mes <- “FEVEREIRO”
+            CASO 3
+                mes <- “MARCO”
+            CASO 4
+                mes <- “ABRIL”
+            CASO 5
+                mes <- “MAIO”
+            CASO 6
+                mes <- “JUNHO”
+            CASO 7
+                mes <- “JULHO”
+            CASO 8
+                mes <- “AGOSTO”
+            CASO 9 
+                mes <- “SETEMBRO”
+            CASO 10
+                mes <- “OUTUBRO”
+            CASO 11
+                mes <- “NOVEMBRO”
+            CASO 12
+                mes <- “DEZEMBRO”
+        FIMESCOLHA
+        ESCREVAL(“Mes correspondente: ”, mes)
+    FIMSE
+FIMALGORITMO
