@@ -1,0 +1,17 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda da Cunha
+// Descrição   : Encontrar a área de um objeto
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 10/03/2021
+
+Var
+   a,b,c,p,area: Real
+
+Inicio
+   Escreval("Digite os três lados do objeto:")
+   leia(a, b, c)
+   p <- (a+b+c)/2
+   area <- RAIZQ(p*(p-a)*(p-b)*(p-c))
+   escreval("Area:", area)
+   
+Fimalgoritmo
