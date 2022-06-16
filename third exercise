@@ -1,0 +1,17 @@
+// Disciplina  : Algoritmo e Programação I
+// Professor   : Fernanda da Cunha
+// Descrição   : Encontrar a hipotenusa
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 10/03/2021
+
+Var
+   a,b: inteiro
+   hip: real
+   
+Inicio
+   Escreval("Digite os 2 catetos:")
+   leia(a,b)
+   hip <- raizq(a^2+b^2)
+   escreval("Hipotenusa = ",hip)
+
+Fimalgoritmo
