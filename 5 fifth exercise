@@ -1,0 +1,21 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda da Cunha 
+// Descrição   : Retornar uma das três respostas referente ao valor que o usuário digitou: intervalo/abaixo/acima
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 10/03/2021
+
+Var
+    numero: inteiro
+    
+Inicio
+    LEIA (numero)
+    SE (numero >= 20) E (numero <= 90) ENTAO
+        ESCREVA ("Número no intervalo [20,90]")
+    SENAO
+        SE (numero < 20) ENTAO
+            ESCREVA ("Número abaixo do intervalo [20,90]")
+        SENAO
+            ESCREVA ("Número acima do intervalo [20,90]")
+        FIMSE
+    FIMSE
+Fimalgoritmo
