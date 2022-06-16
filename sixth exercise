@@ -1,0 +1,22 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda da Cunha 
+// Descrição   : Encontrar o maior número entre os três valores que o usuário digitar
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 10/03/2021
+
+VAR
+    a, b, c, max: INTEIRO
+    
+INICIO
+    LEIA (a, b, c)
+    SE (a > b) E (a > c) ENTAO
+        max <- a
+    SENAO
+        SE b > c ENTAO
+            max <- b
+        SENAO
+            max <- c
+        FIMSE
+    FIMSE
+    ESCREVA ("Maior entre ", a ", ", b ", ", c ": ", max)
+FIMALGORITMO
