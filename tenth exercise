@@ -1,0 +1,25 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda Cunha
+// Descrição   : Calcular a média dos números pares
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 06/10/2021
+
+Var
+    contador, numero: inteiro
+    media: real
+
+Inicio
+    contador<-0
+    numero<-1
+
+    repita
+        escreval("Digite um número: ")
+        leia(numero)
+        contador<-contador+1
+        numero<-numero+numero
+    ate 
+        numero=0
+
+    media<-numero/contador
+    escreval("Média dos números pares: ", media)
+Fimalgoritmo
