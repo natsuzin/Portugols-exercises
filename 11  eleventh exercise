@@ -1,0 +1,44 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda Cunha
+// Descrição   : Verificar a quantidade de alunos abaixo da média
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 24/08/2021
+
+VAR
+    n, i, j, contAbaixo: INTEIRO
+    nomes, nomesAcima: VETOR [1..20] DE CARACTERE
+    notas: VETOR [1..20] DE REAL
+    media: REAL
+    
+INICIO
+    REPITA
+        ESCREVA(“Quantidade de alunos (max 20): “)
+        LEIA(n)
+    ATE (n >0) E (n <= 20)
+    PARA i DE 1 ATE n FAÇA
+        ESCREVA(“Nome: “)
+        LEIA(nomes[i])
+        REPITA
+            ESCREVA(“Nota: “)
+            LEIA(notas[i])
+        ATE (notas[i]>=0) E (notas[i]<=10)
+    FIMPARA
+    PARA i DE 1 ATE n FAÇA
+        media <- media + notas[i]
+    FIMPARA
+    media <- media/n
+    PARA i DE 1 ATE n FAÇA
+        SE notas[i] >= media ENTAO
+            j <- j + 1
+            nomesAcima[j] <- nomes[i] // nome[i] fica na pos[j] agora
+        SENAO
+            contAbaixo <- contAbaixo + 1
+        FIMSE
+    FIMPARA
+    ESCREVAL(“Media da turma:”, media)
+    ESCREVAL(“Alunos acima da media”)
+    PARA i DE 1 ATE j FAÇA
+        ESCREVAL(nomesAcima[i])
+    FIMPARA
+    ESCREVAL(“Quantidade abaixo da media: ”, contAbaixo)
+FIMALGORITMO 
