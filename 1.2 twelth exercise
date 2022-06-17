@@ -1,0 +1,33 @@
+// Disciplina  : Algoritmos e Programação I
+// Professor   : Fernanda Cunha 
+// Descrição   : Encontrar o maior elemento do vetor
+// Autor(a)    : Nathalia Suzin
+// Data atual  : 24/08/2021
+
+VAR
+    n, i, maior, menor: INTEIRO
+    numeros: VETOR [1..15] DE INTEIRO
+INICIO
+    REPITA
+        ESCREVA("Qtde de elementos: ")
+        LEIA(n)
+    ATE (n >= 2) E (n <= 15)
+    PARA i DE 1 ATE n FAÇA
+        ESCREVA(i, "o. elemento: ")
+        LEIA(numeros[i])
+    FIMPARA
+    menor <- numeros[1] 
+    PARA i DE 2 ATE n FAÇA
+        SE menor > numeros[i] ENTAO
+            menor <- numeros[i]
+        FIMSE
+    FIMPARA
+    ESCREVAL("Menor elemento:", menor)
+    maior <- numeros[1] 
+    PARA i DE 2 ATE n FAÇA
+        SE maior < numeros[i] ENTAO
+            maior <- numeros[i]
+        FIMSE
+    FIMPARA
+    ESCREVAL("Maior elemento:", maior)
+FIMALGORITMO 
